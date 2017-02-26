@@ -1,0 +1,78 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: ##EBEDEF;
+  color: #222;
+  font-family: 'Open Sans';
+}
+
+.page {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 960px;
+}
+
+.content {
+  left: 150px;
+  padding: 35px 35px;
+  position: absolute;
+  text-align: left;
+  top: 0;
+}
+
+.nav {
+  height: 400px;
+  width: 150px;
+  list-style: none;
+  font-family: 'Dosis';
+  margin: 0;
+  padding: 100px 0 0 0;
+  text-align: right;
+}
+
+.nav-link {
+  color: #222;
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: 'Dosis';
+}
+
+.portrait {
+  float: left;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item-1 {
+  flex-grow: 1;
+}
+
+.flex-item-vertical-center {
+  align-self: center;
+}
+
+.padding-left-32 {
+  padding-left: 32px;
+}
+
+img.portrait {
+  border-radius: 100px;
+}

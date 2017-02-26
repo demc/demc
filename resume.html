@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <style>
+      /* GENERAL */
+      
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font: 11px/15px "Segoe UI", Helvetica, Arial, Sans-Serif;
+        color: #222;
+      }
+      
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0;
+      }
+      
+      h1 {
+        font: 42px/48px;
+      }
+      
+      h2 {
+        font: 36px/44px;
+        float: left;
+      }
+      
+      h3 {
+        font: 20px/24px;
+      }
+      /* LAYOUT */
+      
+      #header {
+        margin-bottom: 11px;
+        border-bottom: 1px dotted #222;
+      }
+      
+      #content {}
+      
+      #footer {}
+      /* RESUME */
+      
+      .resume {
+        height: 100%;
+        width: 715px;
+        margin: 10px;
+      }
+      
+      #contact div {
+        padding-top: 10px;
+        position: relative;
+      }
+      
+      #contact .title {
+        font-size: 2em;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+      }
+      
+      #contact .subtitle {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-weight: bold;
+        text-align: right;
+      }
+      
+      #contact .single-line {
+        border-top: 1px dotted #222;
+      }
+      
+      .title {
+        color: #333;
+      }
+      
+      .subtitle {
+        font-style: italic;
+      }
+      
+      ul.floated {
+        display: block;
+        float: left;
+        width: 100%;
+        padding-left: 0;
+      }
+      
+      ul.floated li {
+        list-style: none;
+        display: block;
+        float: left;
+      }
+      
+      ul.single-line {
+        width: 100%;
+        margin: 0 0 0 0;
+      }
+      
+      ul.single-line li {
+        padding: 0 10px 0 10px;
+        border-left: 1px dotted #222;
+      }
+      
+      ul.single-line li:first-child {
+        padding-left: 0;
+        border-left: none;
+      }
+      
+      ul.subsection {
+        width: 695px;
+        padding-left: 20px;
+      }
+      
+      ul.subsection li.third {
+        width: 32%;
+      }
+      
+      ul.subsection li.fourth {
+        padding-right: 31px;
+      }
+      
+      ul.subsection li.whole {
+        width: 100%;
+        padding-bottom: 10px;
+      }
+      
+      ul.subsection li.whole span.date {
+        float: right;
+        margin-right: 10px;
+      }
+      
+      ul.subsection ul {
+        list-style-type: disc;
+        width: 100%;
+        padding: 5px 0 0 0;
+      }
+      
+      ul.subsection ul li {
+        float: none;
+        width: 100%;
+        /*padding: 1px 0 0 20px ;*/
+      }
+      /* MISC */
+      
+      .breaker {
+        clear: both;
+      }
+    </style>
+    
+    <div class="resume">
+      <div id="header">
+        <section id="contact">
+          <div class="floated">
+            <h1 class="title">Derrick McMillen</h1><span class="subtitle">
+                Computer Science Educator &amp; Engineer in Oakland, CA
+              </span><br class="breaker"></div>
+          <ul class="single-line floated">
+            <li id="mail">320 Lee Street, Oakland, CA</li>
+            <li id="email">dj@mcmillen.net</li>
+            <li id="phone">858 / 205 - 8446</li>
+          </ul><br class="breaker"></section>
+      </div>
+      <div id="content">
+        <section id="skills">
+          <h2 class="title">Skills</h2>
+          <ul class="subsection floated">
+            <li class="fourth">
+              <h3 class="title">Languages</h3>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-check"></i>JavaScript</li>
+                <li><i class="fa-li fa fa-check"></i>HTML5</li>
+                <li><i class="fa-li fa fa-check"></i>CSS 3</li>
+                <li><i class="fa-li fa fa-check"></i>Ruby</li>
+                <li><i class="fa-li fa fa-check"></i>Java</li>
+                <li><i class="fa-li fa fa-check"></i>C#</li>
+              </ul>
+            </li>
+            <li class="fourth">
+              <h3 class="title">Frameworks/Platforms</h3>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-check"></i>React + Flux + Relay</li>
+                <li><i class="fa-li fa fa-check"></i>ReactART (canvas &amp; SVG)</li>
+                <li><i class="fa-li fa fa-check"></i>Salesforce Aura / Lightning</li>
+                <li><i class="fa-li fa fa-check"></i>NodeJS / ExpressJS</li>
+                <li><i class="fa-li fa fa-check"></i>D3.js (data viz)</li>
+                <li><i class="fa-li fa fa-check"></i>Jest / Jasmine (unit testing)</li>
+              </ul>
+            </li>
+            <li class="fourth">
+              <h3 class="title">Server Platforms</h3>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-check"></i>Debian / Ubuntu</li>
+                <li><i class="fa-li fa fa-check"></i>RHEL / CentOS</li>
+              </ul>
+            </li>
+            <li class="fourth">
+              <h3 class="title">Databases</h3>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-check"></i>MySQL</li>
+                <li><i class="fa-li fa fa-check"></i>MongoDB</li>
+              </ul>
+            </li>
+            <li class="fourth">
+              <h3 class="title">Source Control</h3>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-check"></i>Hg</li>
+                <li><i class="fa-li fa fa-check"></i>Git</li>
+                <li><i class="fa-li fa fa-check"></i>Perforce</li>
+              </ul>
+            </li>
+          </ul><br class="breaker"></section>
+        <section id="experience">
+          <h2 class="title">Experience</h2>
+          <ul class="subsection floated">
+            <li class="whole"><span class="date">Apr 2016 - present</span>
+              <h3 class="title">Coliseum College Prep Academy (Oakland Unified School District)</h3>
+              <h4 class="subtitle">Computer Science Pathway Lead</h4>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-check"></i>Lead the development of a new high school Computer Science pathway (California Career &amp; Techical Education). </li>
+                <li><i class="fa-li fa fa-check"></i>Vetted and developed Computer Science curriculum for 9th, 10th, and 11th grade courses.</li>
+                <li><i class="fa-li fa fa-check"></i>Taught Exploring Computer Science, AP Computer Science Principles, and AP Computer Science to 9th, 10th, and 11th grade respectively.</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="subsection floated">
+            <li class="whole"><span class="date">Sept 2015 - Mar 2016</span>
+              <h3 class="title">Instagram Monetization</h3>
+              <h4 class="subtitle">Frontend Engineer</h4>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-check"></i>Joined team in order to help the ads for Instagram initiative achieve its crucial Q4 goals.</li>
+                <li><i class="fa-li fa fa-check"></i>Built compatibility for the Page Post Engagement ad objective into the PowerEditor and Ads Manager interfaces; enabling substantial growth of Instagram revenue.</li>
+                <li><i class="fa-li fa fa-check"></i>Collaborated closely with Facebook ads interface and API teams to extend compatibility to Instagram customers.</li>
+                <li><i class="fa-li fa fa-check"></i>Analyzed key performance metrics during feature rollout to make data-driven decisions regarding customer pain points.</li>
+                <li><i class="fa-li fa fa-check"></i>Integrated with Facebook survey infrastructure to poll advertisers who were struggling with our interfaces.</li>
+                <li><i class="fa-li fa fa-check"></i>Mentored 2 new colleagues through the 8 week Facebook bootcamp program.</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="subsection floated">
+            <li class="whole"><span class="date">Oct 2014 - Sept 2015</span>
+              <h3 class="title">Facebook Ad Insights</h3>
+              <h4 class="subtitle">Frontend Engineer</h4>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-check"></i>Designed and built a React-powered data visualization framework using ReactART.</li>
+                <li><i class="fa-li fa fa-check"></i>Implemented data visualizations in the Facebook Ads Manager product (React + Flux).</li>
+                <li><i class="fa-li fa fa-check"></i>Managed and mentored a summer intern who contributed significant features to our data visualization framework.</li>
+                <li><i class="fa-li fa fa-check"></i>Evangelized our new data visualization platform to partner teams across Facebook; successfully onboarding over a dozen teams.</li>
+                <li><i class="fa-li fa fa-check"></i>Contributed to highly successful Facebook product: <a href="https://www.facebook.com/celebratepride" target="_BLANK">Celebrate Pride</a> | <a href="https://code.facebook.com/posts/778505998932780/72-hours-to-launch-celebrate-pride/"
+                    target="_BLANK">72 Hours to Launch Celebrate Pride</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <ul class="subsection floated">
+          <li class="whole"><span class="date">Dec 2013 - Sept 2014</span>
+            <h3 class="title">Salesforce.com Platform (Aura / Lightning Framework)</h3>
+            <h4 class="subtitle">Software Engineer</h4>
+            <ul class="fa-ul">
+              <li><i class="fa-li fa fa-check"></i>Joined SCRUM team responsible for building the Aura Framework (single-page application) base JavaScript components.</li>
+              <li><i class="fa-li fa fa-check"></i>Chosen to work on Salesforce1 performance SWAT team, under direct guidance by the CTO.</li>
+              <li><i class="fa-li fa fa-check"></i>Contributed responsive components targeted for desktop and mobile devices.</li>
+              <li><i class="fa-li fa fa-check"></i>Owned list view, grid view, and lookup user interface modules.</li>
+            </ul>
+          </li>
+          <li></li>
+          <li class="whole"><span class="date">Jan 2013 - Dec 2013</span>
+            <h3 class="title">Salesforce.com Sales Cloud (CRM)</h3>
+            <h4 class="subtitle">Associate Software Engineer</h4>
+            <ul class="fa-ul">
+              <li><i class="fa-li fa fa-check"></i>Joined SCRUM team responsible for CRM Tasks and Calendar features.</li>
+              <li><i class="fa-li fa fa-check"></i>Built mobile task management app for iOS, leveraging single-page JavaScript and HTML5 framework (Aura).</li>
+              <li><i class="fa-li fa fa-check"></i>Took initiative to greatly improve HTML5 view rendering performance utilizing internal benchmarking tools.</li>
+              <li><i class="fa-li fa fa-check"></i>Learned how to build highly testable and reusable code via Java beans exposed through services.</li>
+            </ul>
+          </li>
+          <!--
+                        <li class="whole"><span class="date">Jun 2012 - Sept 2012</span><h3 class="title">Microsoft Windows</h3><h4 class="subtitle">Software Development Engineer in Test Intern</h4><ul class="fa-ul"><li><i class="fa-li fa fa-check"></i>Created end-to-end scenarios to validate functionality of Windows security auditing feature using C# test framework.</li><li><i class="fa-li fa fa-check"></i>Collaborated with corresponding feature project manager and developer to resolve bugs.</li><li><i class="fa-li fa fa-check"></i>Built a social photo Windows 8 application, using HTML5, JavaScript, and C#, to stress impacted Windows APIs.</li><li><i class="fa-li fa fa-check"></i>Wrote UI automation tests to invoke scenarios and scripted packaging and testing to include in continuous integration system.</li></ul> 
+              </li><li class="whole"><span class="date">Jun 2011 - Sept 2011</span><h3 class="title">Yahoo! Search</h3><h4 class="subtitle">Software Engineer Intern</h4><ul class="fa-ul"><li><i class="fa-li fa fa-check"></i>Built a benchmarking tool to assist performance engineers using NodeJS, PHP, MySQL, and Hudson.</li><li><i class="fa-li fa fa-check"></i>Extended functionality of existing PHP benchmarking tool by exposing RESTful API.</li><li><i class="fa-li fa fa-check"></i>Created Hudson jobs to schedule execution of NodeJS code responsible for collecting and aggregating benchmark data.</li><li><i class="fa-li fa fa-check"></i>Designed a dashboard interface to display and graph statistical data stored in MySQL.</li></ul></li>
+              -->
+        </ul><br class="breaker">
+        <section id="education">
+          <h2 class="title">Education</h2>
+          <ul class="subsection floated">
+            <li class="whole">
+              <h3 class="title">University of California, San Diego</h3>
+              <h4 class="subtitle">Computer Science, B.S.</h4>
+            </li>
+          </ul><br class="breaker"></section>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
