@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #APblocks {
+      font-family: monospace;
+    }
+    
+    cond {
+      border: solid 1px black;
+      border-radius: 30px;
+      padding: 1px 10px 1px 10px;
+      display: inline-block;
+    }
+    
+    val {
+      border: solid 1px black;
+      border-radius: 0px;
+      margin: 1px;
+      padding: 2px 3px 2px 3px;
+      display: inline-block;
+    }
+    
+    bl {
+      border: solid 1px black;
+      border-radius: 5px;
+      font-family: monospace;
+      padding: 2px 5px 2px 5px;
+      background-color: white;
+      display: inline-block;
+      margin-top: 1px;
+    }
+    
+    .dark {
+      background-color: #dddddd;
+      padding-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='APblocks'>
+    // Negative means ball is not in motion<br>
+    <bl>ballX &larr; -1</bl><br>
+    <bl>ballY &larr; -1</bl><br>
+    <br>
+    <bl class='dark'>PROCEDURE setup<br> &nbsp;&nbsp;
+      <bl>createCanvas
+        <val>480, 480</val>
+      </bl><br>
+    </bl><br>
+    <br>
+    <bl class='dark'>PROCEDURE draw <br> &nbsp;&nbsp;
+      <bl>background
+        <val>122</val>
+      </bl><br> &nbsp;&nbsp;
+      <bl>xMidpoint &larr; width / 2</bl><br> &nbsp;&nbsp;
+      <bl>yMidpoint &larr; height / 2</bl><br>
+      <br> &nbsp;&nbsp;// Draw the cursor<br> &nbsp;&nbsp;
+      <bl>fill
+        <val>255</val>
+      </bl><br> &nbsp;&nbsp;
+      <bl>ellipse
+        <val>mouseX, mouseY, 25, 25</val>
+      </bl><br>
+      <br> &nbsp;&nbsp;
+      <bl class='dark'>IF
+        <cond>mouseIsPressed = true</cond><br> &nbsp;&nbsp;&nbsp;&nbsp;
+        <bl>
+          <bl>ballX &larr; mouseX</bl><br>
+          <bl>ballY &larr; mouseY</bl>
+        </bl>
+      </bl><br>
+      <br> &nbsp;&nbsp;
+      <bl>isBallFlying &larr; ballX >= 0 AND ballY >= 0</bl><br> &nbsp;&nbsp;
+      <bl class='dark'>IF
+        <cond>isBallFlying = true</cond><br> &nbsp;&nbsp;&nbsp;&nbsp;
+        <bl class='dark'>IF
+          <cond>ballY
+            < yMidpoint</cond><br> &nbsp;&nbsp;&nbsp;&nbsp;
+              <bl>ballY &larr; ballY - 9</bl><br> ELSE
+              <br> &nbsp;&nbsp;&nbsp;&nbsp;
+              <bl>ballY &larr; ballY + 9</bl>
+        </bl><br> &nbsp;&nbsp;&nbsp;&nbsp;
+        <bl class='dark'>IF
+          <cond>ballX
+            < xMidpoint</cond><br> &nbsp;&nbsp;&nbsp;&nbsp;
+              <bl>ballX &larr; ballX - 9</bl><br> ELSE
+              <br> &nbsp;&nbsp;&nbsp;&nbsp;
+              <bl>ballX &larr; ballX + 9</bl>
+        </bl><br> &nbsp;&nbsp;
+        <br> &nbsp;&nbsp;// Draw the ball <br> &nbsp;&nbsp;
+        <bl>fill
+          <val>255, 255, 0</val>
+        </bl><br> &nbsp;&nbsp;
+        <bl>ellipse
+          <val>ballX, ballY, 25, 25</val>
+        </bl><br>
+      </bl><br>
+      <br> &nbsp;&nbsp;
+      <bl>isBallOutOfBounds &larr; ballY
+        < 0 OR ballY> height</bl><br> &nbsp;&nbsp;
+      <bl class='dark'>IF
+        <cond>isBallOutOfBounds = true</cond><br> &nbsp;&nbsp;
+        <bl>ballX &larr; -1</bl><br> &nbsp;&nbsp;
+        <bl>ballY &larr; -1</bl>
+      </bl><br>
+    </bl><br>
+    <br>
+
+  </div>
+</body>
+
+</html>
