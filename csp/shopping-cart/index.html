@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shopping Cart</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <h4>My Shopping Cart</h4>
+  <p>
+    Total count: <span id="total-count"></span> Total costs: $<span id="total-cost"></span>
+  </p>
+
+  <p><input id="item-name" placeholder="name"></p>
+  <p><input id="item-image" placeholder="image url"></p>
+  <p><input id="item-cost" placeholder="cost"></p>
+  <p><input id="item-count" placeholder="count"></p>
+  <p><button id="add-to-cart">Add to Cart</button></p>
+
+  <table id="items">
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Count</th>
+      <th>Cost of Items</th>
+    </tr>
+
+  </table>
+
+  <script src="script.min.js"></script>
+
+</body>
+
+</html>
