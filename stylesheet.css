@@ -87,6 +87,15 @@ img.portrait {
   border-radius: 100px;
 }
 
-td {
-  padding: 0 15px 5px 0;
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 5px 15px;
+}
+
+tr:nth-child(odd) {
+  background: #dcdcdc;
 }
