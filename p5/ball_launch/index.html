@@ -79,8 +79,8 @@
         <bl>ellipse
           <val>ballX, ballY, 20, 20</val>
         </bl><br>
-        <bl>ballX = ballX + speedX</bl><br>
-        <bl>ballY = ballY + speedY</bl><br>
+        <bl>ballX &larr; ballX + speedX</bl><br>
+        <bl>ballY &larr; ballY + speedY</bl><br>
         <br>
         <bl>fill
           <val>0, 0, 255</val>
@@ -92,20 +92,20 @@
         <bl class='dark'>IF
           <cond>mouseIsPressed = true</cond><br> &nbsp;&nbsp;
           <bl>
-            <bl>ballX = mouseX</bl><br>
-            <bl>ballY = mouseY</bl><br>
+            <bl>ballX &larr; mouseX</bl><br>
+            <bl>ballY &larr; mouseY</bl><br>
             <br>
             <bl class='dark'>IF
               <cond>mouseY
                 < height / 2</cond><br> &nbsp;&nbsp;
                   <bl>
                     <bl>// TOP HALF</bl><br>
-                    <bl>speedY = -5</bl><br>
+                    <bl>speedY &larr; -5</bl><br>
                   </bl><br> ELSE
                   <br> &nbsp;&nbsp;
                   <bl>
                     <bl>// BOTTOM HALF</bl><br>
-                    <bl>speedY = 5</bl><br>
+                    <bl>speedY &larr; 5</bl><br>
                   </bl>
             </bl><br>
             <br>
@@ -114,12 +114,12 @@
                 < width / 2</cond><br> &nbsp;&nbsp;
                   <bl>
                     <bl>// LEFT HALF</bl><br>
-                    <bl>speedX = -5</bl><br>
+                    <bl>speedX &larr; -5</bl><br>
                   </bl><br> ELSE
                   <br> &nbsp;&nbsp;
                   <bl>
                     <bl>// RIGHT HALF</bl><br>
-                    <bl>speedX = 5</bl><br>
+                    <bl>speedX &larr; 5</bl><br>
                   </bl>
             </bl><br>
           </bl>
