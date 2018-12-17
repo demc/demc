@@ -327,7 +327,7 @@ public void draw()
 
     if (checkForCollisions())
     {
-      points+= random(0, 10);
+      points+= 1;//random(0, 10);
       brick.play();
       ball.reverseSpeedY();
     }
