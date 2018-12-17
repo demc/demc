@@ -26,7 +26,7 @@ public boolean hasGameStarted = false;
 public boolean isGameOver = false;
 public int paddleX;
 public int paddleY;
-public int level = 3;
+public int level = 1;
 public int lives = 3;
 public int points = 0;
 private SoundFile  beep;
